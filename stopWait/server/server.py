@@ -70,11 +70,10 @@ if(cMessage_list[0].upper() == "PUT"):
             
             if(int(doneNum) == 1):
                 done = True
-            print(seqNum)
+         
             #skip over the seqNum & doneNum
             if(int(seqNum) <10 ):
                 text = message.decode('utf_8', 'ignore')[4:]
-                print("test")
             elif(int(seqNum) >=10 and int(seqNum) <100):
                 text = message.decode('utf_8', 'ignore')[5:]
             else:
